@@ -1,7 +1,7 @@
 ---
 layout: content-page
+image: /images/uploads/contact.jpeg
 title: Contact
-img_src: /images/contact.jpeg
 ---
 
 This is the contact page ☎️.
