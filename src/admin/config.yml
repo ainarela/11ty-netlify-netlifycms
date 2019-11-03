@@ -9,15 +9,17 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "src/views/index.njk"
+        file: "src/views/index.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: page_content, widget: markdown}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "content-page"}
           - {label: Image, name: img_src, widget: image}
-      - label: "Content"
-        name: "content"
-        file: "src/views/content.njk"
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Contact"
+        name: "contact"
+        file: "src/views/contact.md"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Content, name: page_content, widget: markdown}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "content-page"}
           - {label: Image, name: img_src, widget: image}
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}
