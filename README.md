@@ -12,14 +12,19 @@ $ npm run clean
 
 ### Build for developement and watch for changes
 
-Running at `http://localhost:4000/`.
-
 ```
 $ npm run dev
 ```
+Running at `http://localhost:4000/`.
 
 ### Build for production
 
 ```
 $ npm run build
 ```
+
+## Try it now
+
+Click the button below to deploy a new site from this starter project on Netlify.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ainarela/11ty-netlify-netlifycms&stack=cms)
