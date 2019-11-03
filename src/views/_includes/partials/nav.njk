@@ -1,0 +1,14 @@
+<nav class="l-main__nav c-nav">
+    <a href="/" class="c-nav__logo">Logo.</a>
+    <ul class="c-nav__list">
+    {% for post in collections.all %}
+        <li>
+            {% if page.url == post.url %}
+            {{ post.fileSlug | capitalize }}
+            {% else %}
+            <a href="{{ post.url }}">{{ post.fileSlug | capitalize }}</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

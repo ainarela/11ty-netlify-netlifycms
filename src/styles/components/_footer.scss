@@ -1,0 +1,10 @@
+@use '../config';
+
+.c-footer {
+    padding: 30px 0;
+    border-top: 1px solid config.color('grey', 'light');
+}
+
+.c-footer__content {
+    margin: 0;
+}

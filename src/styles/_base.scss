@@ -1,0 +1,7 @@
+@use 'config';
+
+body {
+    font-family: sans-serif;
+    color: config.color('grey', 'dark');
+    margin: 0;
+}
