@@ -10,7 +10,8 @@ module.exports = function (eleventyConfig) {
             includes: "_includes/partials",
             layouts: "_includes/layouts"
         },
-        templateFormats: ["njk"],
+        templateFormats: ["md", "njk"],
+        markdownTemplateEngine: "njk",
         passthroughFileCopy: true
     };
 };
