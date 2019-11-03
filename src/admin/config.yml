@@ -13,7 +13,7 @@ collections:
         file: "src/views/index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "content-page"}
-          - {label: Image, name: img_src, widget: image}
+          - {label: Image, name: image, widget: image}
           - {label: Title, name: title, widget: string}
           - {label: Content, name: body, widget: markdown}
       - label: "Contact"
@@ -21,6 +21,6 @@ collections:
         file: "src/views/contact.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "content-page"}
-          - {label: Image, name: img_src, widget: image}
+          - {label: Image, name: image, widget: image}
           - {label: Title, name: title, widget: string}
           - {label: Content, name: body, widget: markdown}

@@ -11,7 +11,25 @@
 <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <!-- Custom Previews -->
     <script>
+        var PagePreview = createClass({
+            render: function () {
+                var entry = this.props.entry;
+                var image = entry.getIn(['data', 'image']);
+                var banner = this.props.getAsset(image);
+                return h('div', { "className": "l-main" },
+                    h('div', { "className": "l-main__main" },
+                        h('img', { src: banner.toString(), "className": "c-banner" }),
+                        h('h1', {}, entry.getIn(['data', 'title'])),
+                        h('div', {}, this.props.widgetFor('body'))
+                    )
+                );
+            }
+        });
+
+        CMS.registerPreviewTemplate("home", PagePreview);
+        CMS.registerPreviewTemplate("contact", PagePreview);
         CMS.registerPreviewStyle("/styles/main.css");
     </script>
 </body>
