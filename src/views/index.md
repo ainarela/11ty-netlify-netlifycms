@@ -3,7 +3,7 @@ layout: content-page
 image: /images/uploads/home.jpeg
 title: Home
 ---
-This is the home page 🏡.
+This is the home page 🎉.
 
 👋
 
